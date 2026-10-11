@@ -1,86 +1,230 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-labelledby="t d">
   <title id="t">awesome-iran-mcp</title>
-  <desc id="d">19 MCP servers and 308 tools that give AI agents the Iranian web: shopping, food, travel, health, books, payments and messaging.</desc>
+  <desc id="d">19 MCP servers and 308 tools that give AI agents the Iranian web</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0a1230"/>
-      <stop offset="1" stop-color="#1b0d36"/>
+      <stop offset="0" stop-color="#080b24"/><stop offset="1" stop-color="#170a2e"/>
+    </linearGradient>
+    <g id="blobs">
+      <circle cx="210" cy="90" r="190" fill="#18c8b8"/>
+      <circle cx="560" cy="400" r="170" fill="#7b3fe4"/>
+      <circle cx="860" cy="60" r="160" fill="#ff3d8b"/>
+      <circle cx="1160" cy="380" r="210" fill="#ffb02e"/>
+      <circle cx="420" cy="-40" r="120" fill="#3d7bff"/>
+    </g>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+    <filter id="frost" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="lift" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="iconlift" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.75"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3fd6c9"/>
-      <stop offset="1" stop-color="#f4b54a"/>
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#bff6ee"/>
     </linearGradient>
-    <pattern id="khatam" width="80" height="80" patternUnits="userSpaceOnUse">
-      <path d="M22 22H58V58H22Z M40 14.5L65.5 40L40 65.5L14.5 40Z" fill="none" stroke="#3fd6c9" stroke-width="1"/>
-      <circle cx="0" cy="0" r="3" fill="#f4b54a"/>
-    </pattern>
-    <radialGradient id="fade" cx="0.78" cy="0.5" r="0.7">
-      <stop offset="0" stop-color="#fff" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <mask id="m"><rect width="1280" height="420" fill="url(#fade)"/></mask>
+    <linearGradient id="a0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5a6e"/><stop offset="1" stop-color="#c3002f"/></linearGradient>
+    <linearGradient id="a1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3dbb"/><stop offset="1" stop-color="#b8006f"/></linearGradient>
+    <linearGradient id="a2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fd46a"/><stop offset="1" stop-color="#108a33"/></linearGradient>
+    <linearGradient id="a3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d7bff"/><stop offset="1" stop-color="#0634a0"/></linearGradient>
+    <linearGradient id="a4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#d14800"/></linearGradient>
+    <linearGradient id="a5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5c8f"/><stop offset="1" stop-color="#a3164a"/></linearGradient>
+    <linearGradient id="a6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf3d"/><stop offset="1" stop-color="#d48a00"/></linearGradient>
+    <linearGradient id="a7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a06bff"/><stop offset="1" stop-color="#4f1fb0"/></linearGradient>
+    <linearGradient id="a8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2fe0cf"/><stop offset="1" stop-color="#00897e"/></linearGradient>
+    <linearGradient id="a9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc23d"/><stop offset="1" stop-color="#f07800"/></linearGradient>
+    <linearGradient id="a10" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4d8dff"/><stop offset="1" stop-color="#0a3fa8"/></linearGradient>
+    <linearGradient id="a11" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3dc4ff"/><stop offset="1" stop-color="#0066cc"/></linearGradient>
+    <linearGradient id="a12" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2fd1c8"/><stop offset="1" stop-color="#00706f"/></linearGradient>
+    <linearGradient id="a13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5cb8f0"/><stop offset="1" stop-color="#1565a8"/></linearGradient>
+    <linearGradient id="a14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6b66"/><stop offset="1" stop-color="#a31d1a"/></linearGradient>
+    <linearGradient id="a15" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a5c"/><stop offset="1" stop-color="#d43a10"/></linearGradient>
+    <linearGradient id="a16" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a1887f"/><stop offset="1" stop-color="#4e342e"/></linearGradient>
+    <linearGradient id="a17" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5c8cff"/><stop offset="1" stop-color="#0033cc"/></linearGradient>
+    <linearGradient id="a18" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3dd9c5"/><stop offset="1" stop-color="#007d71"/></linearGradient>
   </defs>
 
-  <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
-  <rect width="1280" height="420" rx="24" fill="url(#khatam)" opacity="0.22" mask="url(#m)"/>
+  <rect width="1280" height="460" rx="28" fill="url(#bg)"/>
+  <g clip-path="url(#frame)"><use href="#blobs" filter="url(#soft)" opacity="0.85"/></g>
+  <clipPath id="frame"><rect width="1280" height="460" rx="28"/></clipPath>
 
-  <g font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" fill="#8fa3d9" font-size="18">
-    <text x="64" y="96">$ claude mcp add digikala -- uvx digikala-mcp</text>
+  <clipPath id="card"><rect x="40" y="30" width="590" height="400" rx="40"/></clipPath>
+  <rect x="40" y="30" width="590" height="400" rx="40" fill="#000" fill-opacity="0.01" filter="url(#lift)"/>
+  <g clip-path="url(#card)">
+    <rect x="40" y="30" width="590" height="400" fill="url(#bg)"/>
+    <use href="#blobs" filter="url(#frost)" opacity="0.95"/>
+    <rect x="40" y="30" width="590" height="400" fill="url(#sheen)"/>
   </g>
-  <text x="62" y="186" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="66" font-weight="800" fill="url(#ink)" letter-spacing="-2">awesome-iran-mcp</text>
-  <text x="64" y="236" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="26" fill="#e7ebff">The Iranian web, wired for AI agents.</text>
-
-  <g font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="20" font-weight="700">
-    <rect x="64" y="282" width="168" height="52" rx="26" fill="#3fd6c9" fill-opacity="0.14" stroke="#3fd6c9"/>
-    <text x="148" y="315" text-anchor="middle" fill="#3fd6c9">19 servers</text>
-    <rect x="248" y="282" width="150" height="52" rx="26" fill="#f4b54a" fill-opacity="0.14" stroke="#f4b54a"/>
-    <text x="323" y="315" text-anchor="middle" fill="#f4b54a">308 tools</text>
-    <rect x="414" y="282" width="196" height="52" rx="26" fill="#e7ebff" fill-opacity="0.08" stroke="#8fa3d9"/>
-    <text x="512" y="315" text-anchor="middle" fill="#e7ebff">prices in Toman</text>
+  <rect x="40.75" y="30.75" width="588.5" height="398.5" rx="40" fill="none" stroke="url(#rim)" stroke-width="1.5"/>
+  <clipPath id="panel"><rect x="670" y="30" width="570" height="400" rx="40"/></clipPath>
+  <rect x="670" y="30" width="570" height="400" rx="40" fill="#000" fill-opacity="0.01" filter="url(#lift)"/>
+  <g clip-path="url(#panel)">
+    <rect x="670" y="30" width="570" height="400" fill="url(#bg)"/>
+    <use href="#blobs" filter="url(#frost)" opacity="0.95"/>
+    <rect x="670" y="30" width="570" height="400" fill="url(#sheen)"/>
   </g>
+  <rect x="670.75" y="30.75" width="568.5" height="398.5" rx="40" fill="none" stroke="url(#rim)" stroke-width="1.5"/>
 
-  <g font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#e7ebff" text-anchor="middle">
-    <g fill-opacity="0.07" stroke-opacity="0.5">
-      <rect x="742" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="866" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="990" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="1114" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="742" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="866" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="990" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="1114" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="742" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="866" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="990" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="1114" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="742" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="866" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="990" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="1114" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
-      <rect x="804" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="928" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-      <rect x="1052" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
-    </g>
-    <text x="798" y="97">Digikala</text>
-    <text x="922" y="97">Snappfood</text>
-    <text x="1046" y="97">Okala</text>
-    <text x="1170" y="97">Technolife</text>
-    <text x="798" y="153">MasterKala</text>
-    <text x="922" y="153">Khanoumi</text>
-    <text x="1046" y="153">Asal Banoo</text>
-    <text x="1170" y="153">Shopino</text>
-    <text x="798" y="209">Jabama</text>
-    <text x="922" y="209">Otaghak</text>
-    <text x="1046" y="209">MrBilit</text>
-    <text x="1170" y="209">Flytoday</text>
-    <text x="798" y="265">Paziresh24</text>
-    <text x="922" y="265">Doctoreto</text>
-    <text x="1046" y="265">Taaghche</text>
-    <text x="1170" y="265">Fidibo</text>
-    <text x="860" y="321">30book</text>
-    <text x="984" y="321">PayPing</text>
-    <text x="1108" y="321">Bale</text>
+  <rect x="84" y="70" width="300" height="38" rx="19" fill="#000" fill-opacity="0.28" stroke="#fff" stroke-opacity="0.25"/>
+  <text x="234" y="95" text-anchor="middle" font-family="'SF Mono','JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="16" fill="#d9fff9">$ uvx digikala-mcp</text>
+  <text x="84" y="196" text-anchor="start" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="url(#ink)" letter-spacing="-1.5">awesome-iran-mcp</text>
+  <text x="84" y="250" text-anchor="start" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="25" fill="#fff" fill-opacity="0.92">The Iranian web, wired for AI agents.</text>
+  <rect x="84" y="300" width="150" height="48" rx="24" fill="#fff" fill-opacity="0.14" stroke="#fff" stroke-opacity="0.35"/>
+  <circle cx="108" cy="324" r="6" fill="#2fe0cf"/>
+  <text x="169.0" y="331" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#fff">19 servers</text>
+<rect x="248" y="300" width="140" height="48" rx="24" fill="#fff" fill-opacity="0.14" stroke="#fff" stroke-opacity="0.35"/>
+  <circle cx="272" cy="324" r="6" fill="#ffc23d"/>
+  <text x="328.0" y="331" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#fff">308 tools</text>
+<rect x="402" y="300" width="170" height="48" rx="24" fill="#fff" fill-opacity="0.14" stroke="#fff" stroke-opacity="0.35"/>
+  <circle cx="426" cy="324" r="6" fill="#ff5c8f"/>
+  <text x="497.0" y="331" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#fff">Toman prices</text>
+  <text x="84" y="396" text-anchor="start" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15" fill="#fff" fill-opacity="0.7">Claude · Cursor · VS Code · Windsurf · any MCP client</text>
+
+  <g filter="url(#iconlift)">
+    <rect x="708" y="46" width="70" height="70" rx="18" fill="url(#a0)"/>
+    <rect x="708" y="46" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="708.5" y="46.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
   </g>
-
-  <text x="64" y="380" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#8fa3d9">Claude · Cursor · VS Code · Windsurf · any MCP client</text>
+  <text x="743.0" y="93" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">D</text>
+  <text x="743.0" y="132" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Digikala</text>
+  <g filter="url(#iconlift)">
+    <rect x="812" y="46" width="70" height="70" rx="18" fill="url(#a1)"/>
+    <rect x="812" y="46" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="812.5" y="46.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="847.0" y="93" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">S</text>
+  <text x="847.0" y="132" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Snappfood</text>
+  <g filter="url(#iconlift)">
+    <rect x="916" y="46" width="70" height="70" rx="18" fill="url(#a2)"/>
+    <rect x="916" y="46" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="916.5" y="46.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="951.0" y="93" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">O</text>
+  <text x="951.0" y="132" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Okala</text>
+  <g filter="url(#iconlift)">
+    <rect x="1020" y="46" width="70" height="70" rx="18" fill="url(#a3)"/>
+    <rect x="1020" y="46" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="1020.5" y="46.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1055.0" y="93" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">T</text>
+  <text x="1055.0" y="132" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Technolife</text>
+  <g filter="url(#iconlift)">
+    <rect x="1124" y="46" width="70" height="70" rx="18" fill="url(#a4)"/>
+    <rect x="1124" y="46" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="1124.5" y="46.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1159.0" y="93" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">M</text>
+  <text x="1159.0" y="132" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">MasterKala</text>
+  <g filter="url(#iconlift)">
+    <rect x="708" y="140" width="70" height="70" rx="18" fill="url(#a5)"/>
+    <rect x="708" y="140" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="708.5" y="140.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="743.0" y="187" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">K</text>
+  <text x="743.0" y="226" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Khanoumi</text>
+  <g filter="url(#iconlift)">
+    <rect x="812" y="140" width="70" height="70" rx="18" fill="url(#a6)"/>
+    <rect x="812" y="140" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="812.5" y="140.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="847.0" y="187" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">A</text>
+  <text x="847.0" y="226" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Asal Banoo</text>
+  <g filter="url(#iconlift)">
+    <rect x="916" y="140" width="70" height="70" rx="18" fill="url(#a7)"/>
+    <rect x="916" y="140" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="916.5" y="140.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="951.0" y="187" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">S</text>
+  <text x="951.0" y="226" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Shopino</text>
+  <g filter="url(#iconlift)">
+    <rect x="1020" y="140" width="70" height="70" rx="18" fill="url(#a8)"/>
+    <rect x="1020" y="140" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="1020.5" y="140.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1055.0" y="187" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">J</text>
+  <text x="1055.0" y="226" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Jabama</text>
+  <g filter="url(#iconlift)">
+    <rect x="1124" y="140" width="70" height="70" rx="18" fill="url(#a9)"/>
+    <rect x="1124" y="140" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="1124.5" y="140.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1159.0" y="187" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">O</text>
+  <text x="1159.0" y="226" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Otaghak</text>
+  <g filter="url(#iconlift)">
+    <rect x="708" y="234" width="70" height="70" rx="18" fill="url(#a10)"/>
+    <rect x="708" y="234" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="708.5" y="234.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="743.0" y="281" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">M</text>
+  <text x="743.0" y="320" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">MrBilit</text>
+  <g filter="url(#iconlift)">
+    <rect x="812" y="234" width="70" height="70" rx="18" fill="url(#a11)"/>
+    <rect x="812" y="234" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="812.5" y="234.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="847.0" y="281" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">F</text>
+  <text x="847.0" y="320" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Flytoday</text>
+  <g filter="url(#iconlift)">
+    <rect x="916" y="234" width="70" height="70" rx="18" fill="url(#a12)"/>
+    <rect x="916" y="234" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="916.5" y="234.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="951.0" y="281" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">P</text>
+  <text x="951.0" y="320" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Paziresh24</text>
+  <g filter="url(#iconlift)">
+    <rect x="1020" y="234" width="70" height="70" rx="18" fill="url(#a13)"/>
+    <rect x="1020" y="234" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="1020.5" y="234.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1055.0" y="281" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">D</text>
+  <text x="1055.0" y="320" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Doctoreto</text>
+  <g filter="url(#iconlift)">
+    <rect x="1124" y="234" width="70" height="70" rx="18" fill="url(#a14)"/>
+    <rect x="1124" y="234" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="1124.5" y="234.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1159.0" y="281" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">T</text>
+  <text x="1159.0" y="320" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Taaghche</text>
+  <g filter="url(#iconlift)">
+    <rect x="760.0" y="328" width="70" height="70" rx="18" fill="url(#a15)"/>
+    <rect x="760.0" y="328" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="760.5" y="328.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="795.0" y="375" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">F</text>
+  <text x="795.0" y="414" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Fidibo</text>
+  <g filter="url(#iconlift)">
+    <rect x="864.0" y="328" width="70" height="70" rx="18" fill="url(#a16)"/>
+    <rect x="864.0" y="328" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="864.5" y="328.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="899.0" y="375" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#fff">30</text>
+  <text x="899.0" y="414" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">30book</text>
+  <g filter="url(#iconlift)">
+    <rect x="968.0" y="328" width="70" height="70" rx="18" fill="url(#a17)"/>
+    <rect x="968.0" y="328" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="968.5" y="328.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1003.0" y="375" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">P</text>
+  <text x="1003.0" y="414" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">PayPing</text>
+  <g filter="url(#iconlift)">
+    <rect x="1072.0" y="328" width="70" height="70" rx="18" fill="url(#a18)"/>
+    <rect x="1072.0" y="328" width="70" height="35.0" rx="18" fill="url(#gloss)"/>
+    <rect x="1072.5" y="328.5" width="69" height="69" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+  </g>
+  <text x="1107.0" y="375" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" fill="#fff">B</text>
+  <text x="1107.0" y="414" text-anchor="middle" font-family="'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">Bale</text>
 </svg>

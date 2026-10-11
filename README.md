@@ -177,6 +177,7 @@ Pull every server to its latest `main` and rebuild the catalog:
 ```bash
 git submodule update --init --remote
 python scripts/catalog.py            # rewrites servers.json, TOOLS.md, .mcp.json
+python scripts/banner.py             # redraws both banners with the new counts
 ```
 
 Bugs and feature requests for a server go to that server's own repo.

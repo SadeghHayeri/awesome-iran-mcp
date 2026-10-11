@@ -183,6 +183,7 @@ uv run pytest -m live -q             # against the real site
 # update every server to latest main and rebuild the catalog
 git submodule update --init --remote
 python scripts/catalog.py
+python scripts/banner.py
 ```
 
 <div dir="rtl">

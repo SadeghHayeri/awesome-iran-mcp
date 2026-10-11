@@ -4,8 +4,14 @@ Counts come from servers.json, so run scripts/catalog.py first:  python scripts/
 """
 
 import base64
+import html
+import io
 import json
 import pathlib
+import re
+
+from fontTools import subset
+from fontTools.ttLib import TTFont
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 W, H = 1280, 460
@@ -34,8 +40,9 @@ APPS = [
     ("Bale", "بله", "bale.png", 0),
 ]
 
-LATIN = "'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif"
-PERSIAN = "Vazirmatn,Vazir,Sahel,Tahoma,'Segoe UI',sans-serif"
+# Vazirmatn is embedded into each banner (see embed_fonts); the rest is fallback
+LATIN = PERSIAN = "Vazirmatn,Vazir,Tahoma,'Segoe UI',sans-serif"
+WEIGHTS = {400: "Regular", 600: "SemiBold", 700: "Bold", 800: "ExtraBold"}
 MONO = "'SF Mono','JetBrains Mono','Cascadia Code',Consolas,monospace"
 FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 
@@ -174,11 +181,32 @@ def banner(fa: bool, servers: int, tools: int) -> str:
 """
 
 
+def embed_fonts(svg: str) -> str:
+    """GitHub shows SVGs as <img>, which can't load fonts, so subset Vazirmatn to the banner's text and inline it."""
+    text = "".join(html.unescape(t) for t in re.findall(r"<text[^>]*>([^<]*)</text>", svg))
+    faces = []
+    for weight, style in WEIGHTS.items():
+        font = TTFont(ROOT / "assets" / "fonts" / f"Vazirmatn-{style}.woff2")
+        opts = subset.Options()
+        opts.flavor, opts.layout_features, opts.hinting = "woff2", ["*"], False  # keep Persian joining forms
+        sub = subset.Subsetter(opts)
+        sub.populate(text=text)
+        sub.subset(font)
+        buf = io.BytesIO()
+        font.save(buf)
+        data = base64.b64encode(buf.getvalue()).decode()
+        faces.append(
+            f"@font-face{{font-family:Vazirmatn;font-weight:{weight};src:url(data:font/woff2;base64,{data}) format('woff2')}}"
+        )
+    return svg.replace("<defs>", f"<defs>\n    <style>{''.join(faces)}</style>", 1)
+
+
 def main() -> None:
     catalog = json.loads((ROOT / "servers.json").read_text(encoding="utf-8"))
     servers, tools = len(catalog), sum(s["tool_count"] for s in catalog)
     for name, fa in (("banner.svg", False), ("banner.fa.svg", True)):
-        (ROOT / "assets" / name).write_text(banner(fa, servers, tools), encoding="utf-8", newline="\n")
+        svg = embed_fonts(banner(fa, servers, tools))
+        (ROOT / "assets" / name).write_text(svg, encoding="utf-8", newline="\n")
     print(f"banners written: {servers} servers, {tools} tools")
 
 

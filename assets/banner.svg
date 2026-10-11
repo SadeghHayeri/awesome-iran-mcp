@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="t d">
+  <title id="t">awesome-iran-mcp</title>
+  <desc id="d">19 MCP servers and 308 tools that give AI agents the Iranian web: shopping, food, travel, health, books, payments and messaging.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1230"/>
+      <stop offset="1" stop-color="#1b0d36"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fd6c9"/>
+      <stop offset="1" stop-color="#f4b54a"/>
+    </linearGradient>
+    <pattern id="khatam" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M22 22H58V58H22Z M40 14.5L65.5 40L40 65.5L14.5 40Z" fill="none" stroke="#3fd6c9" stroke-width="1"/>
+      <circle cx="0" cy="0" r="3" fill="#f4b54a"/>
+    </pattern>
+    <radialGradient id="fade" cx="0.78" cy="0.5" r="0.7">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="m"><rect width="1280" height="420" fill="url(#fade)"/></mask>
+  </defs>
+
+  <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="24" fill="url(#khatam)" opacity="0.22" mask="url(#m)"/>
+
+  <g font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" fill="#8fa3d9" font-size="18">
+    <text x="64" y="96">$ claude mcp add digikala -- uvx digikala-mcp</text>
+  </g>
+  <text x="62" y="186" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="66" font-weight="800" fill="url(#ink)" letter-spacing="-2">awesome-iran-mcp</text>
+  <text x="64" y="236" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="26" fill="#e7ebff">The Iranian web, wired for AI agents.</text>
+
+  <g font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="20" font-weight="700">
+    <rect x="64" y="282" width="168" height="52" rx="26" fill="#3fd6c9" fill-opacity="0.14" stroke="#3fd6c9"/>
+    <text x="148" y="315" text-anchor="middle" fill="#3fd6c9">19 servers</text>
+    <rect x="248" y="282" width="150" height="52" rx="26" fill="#f4b54a" fill-opacity="0.14" stroke="#f4b54a"/>
+    <text x="323" y="315" text-anchor="middle" fill="#f4b54a">308 tools</text>
+    <rect x="414" y="282" width="196" height="52" rx="26" fill="#e7ebff" fill-opacity="0.08" stroke="#8fa3d9"/>
+    <text x="512" y="315" text-anchor="middle" fill="#e7ebff">prices in Toman</text>
+  </g>
+
+  <g font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#e7ebff" text-anchor="middle">
+    <g fill-opacity="0.07" stroke-opacity="0.5">
+      <rect x="742" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="866" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="990" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="1114" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="742" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="866" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="990" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="1114" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="742" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="866" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="990" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="1114" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="742" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="866" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="990" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="1114" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="804" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="928" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="1052" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+    </g>
+    <text x="798" y="97">Digikala</text>
+    <text x="922" y="97">Snappfood</text>
+    <text x="1046" y="97">Okala</text>
+    <text x="1170" y="97">Technolife</text>
+    <text x="798" y="153">MasterKala</text>
+    <text x="922" y="153">Khanoumi</text>
+    <text x="1046" y="153">Asal Banoo</text>
+    <text x="1170" y="153">Shopino</text>
+    <text x="798" y="209">Jabama</text>
+    <text x="922" y="209">Otaghak</text>
+    <text x="1046" y="209">MrBilit</text>
+    <text x="1170" y="209">Flytoday</text>
+    <text x="798" y="265">Paziresh24</text>
+    <text x="922" y="265">Doctoreto</text>
+    <text x="1046" y="265">Taaghche</text>
+    <text x="1170" y="265">Fidibo</text>
+    <text x="860" y="321">30book</text>
+    <text x="984" y="321">PayPing</text>
+    <text x="1108" y="321">Bale</text>
+  </g>
+
+  <text x="64" y="380" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#8fa3d9">Claude · Cursor · VS Code · Windsurf · any MCP client</text>
+</svg>

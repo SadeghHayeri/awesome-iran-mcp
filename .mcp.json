@@ -1,0 +1,124 @@
+{
+  "mcpServers": {
+    "snapp": {
+      "command": "uvx",
+      "args": [
+        "snapp-mcp"
+      ]
+    },
+    "okala": {
+      "command": "uvx",
+      "args": [
+        "okala-mcp"
+      ]
+    },
+    "digikala": {
+      "command": "uvx",
+      "args": [
+        "digikala-mcp"
+      ]
+    },
+    "technolife": {
+      "command": "uvx",
+      "args": [
+        "technolife-mcp"
+      ]
+    },
+    "masterkala": {
+      "command": "uvx",
+      "args": [
+        "masterkala-mcp"
+      ]
+    },
+    "khanoumi": {
+      "command": "uvx",
+      "args": [
+        "khanoumi-mcp"
+      ]
+    },
+    "asalbanoo": {
+      "command": "uvx",
+      "args": [
+        "asalbanoo-mcp"
+      ]
+    },
+    "shopino": {
+      "command": "uvx",
+      "args": [
+        "shopino-mcp"
+      ]
+    },
+    "otaghak": {
+      "command": "uvx",
+      "args": [
+        "otaghak-mcp"
+      ]
+    },
+    "jabama": {
+      "command": "uvx",
+      "args": [
+        "jabama-mcp"
+      ]
+    },
+    "mrbilit": {
+      "command": "uvx",
+      "args": [
+        "mrbilit-mcp"
+      ]
+    },
+    "flytoday": {
+      "command": "uvx",
+      "args": [
+        "flytoday-mcp"
+      ]
+    },
+    "paziresh24": {
+      "command": "uvx",
+      "args": [
+        "paziresh24-mcp"
+      ]
+    },
+    "doctoreto": {
+      "command": "uvx",
+      "args": [
+        "doctoreto-mcp"
+      ]
+    },
+    "taaghche": {
+      "command": "uvx",
+      "args": [
+        "taaghche-mcp"
+      ]
+    },
+    "fidibo": {
+      "command": "uvx",
+      "args": [
+        "fidibo-mcp"
+      ]
+    },
+    "30book": {
+      "command": "uvx",
+      "args": [
+        "30book-mcp"
+      ]
+    },
+    "payping": {
+      "command": "uvx",
+      "args": [
+        "payping-mcp"
+      ],
+      "env": {
+        "PAYPING_TOKEN": "${PAYPING_TOKEN:-}"
+      }
+    },
+    "bale": {
+      "command": "uvx",
+      "args": [
+        "bale-mcp"
+      ],
+      "env": {
+        "BALE_BOT_TOKEN": "${BALE_BOT_TOKEN:-}"
+      }
+    }
+  }
+}

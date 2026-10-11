@@ -1,0 +1,34 @@
+# awesome-iran-mcp
+
+> 19 unofficial, open-source MCP servers (308 tools) that let AI agents search and compare Iranian websites: Digikala, Technolife, MasterKala, Shopino, Khanoumi, Asal Banoo, Snappfood, Okala, MrBilit, Flytoday, Jabama, Otaghak, Paziresh24, Doctoreto, Taaghche, Fidibo, 30book, plus PayPing and Bale for the user's own accounts. Prices in Toman. Site servers are read-only. Run any server with `uvx <name>-mcp`.
+
+## Docs
+
+- [AGENTS.md](https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/AGENTS.md): which server for which task, rules, install
+- [TOOLS.md](https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/TOOLS.md): every tool with a one-line summary
+- [servers.json](https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/servers.json): machine-readable catalog (package, version, env vars, tools)
+- [.mcp.json](https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/.mcp.json): config for all servers
+- [README.md](https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/README.md): overview (English)
+- [README.fa.md](https://raw.githubusercontent.com/sepehr071/awesome-iran-mcp/main/README.fa.md): overview (Persian)
+
+## Servers
+
+- [digikala-mcp](https://github.com/sepehr071/digikala-mcp): Digikala, Iran's largest online store
+- [technolife-mcp](https://github.com/sepehr071/technolife-mcp): Technolife electronics, cash and installment prices
+- [masterkala-mcp](https://github.com/sepehr071/masterkala-mcp): MasterKala gadgets and accessories
+- [shopino-mcp](https://github.com/sepehr071/shopino-mcp): Shopino fashion marketplace
+- [khanoumi-mcp](https://github.com/sepehr071/khanoumi-mcp): Khanoumi cosmetics and perfume
+- [asalbanoo-mcp](https://github.com/sepehr071/asalbanoo-mcp): Asal Banoo cosmetics and hair care
+- [snapp-mcp](https://github.com/sepehr071/snapp-mcp): Snappfood food delivery and SnappMarket groceries
+- [okala-mcp](https://github.com/sepehr071/okala-mcp): Okala groceries from nearby stores
+- [mrbilit-mcp](https://github.com/sepehr071/mrbilit-mcp): MrBilit flights, trains, buses, taxis, hotels
+- [flytoday-mcp](https://github.com/sepehr071/flytoday-mcp): Flytoday flights, trains, buses, hotels, villas, CIP, eSIM, visas
+- [jabama-mcp](https://github.com/sepehr071/jabama-mcp): Jabama stays, tours, events
+- [otaghak-mcp](https://github.com/sepehr071/otaghak-mcp): Otaghak villas and cottages
+- [paziresh24-mcp](https://github.com/sepehr071/paziresh24-mcp): Paziresh24 doctors and appointments
+- [doctoreto-mcp](https://github.com/sepehr071/doctoreto-mcp): Doctoreto doctors, clinics, labs
+- [taaghche-mcp](https://github.com/sepehr071/taaghche-mcp): Taaghche ebooks and audiobooks
+- [fidibo-mcp](https://github.com/sepehr071/fidibo-mcp): Fidibo ebooks and audiobooks
+- [30book-mcp](https://github.com/sepehr071/30book-mcp): 30book printed books
+- [payping-mcp](https://github.com/sepehr071/payping-mcp): PayPing merchant account (token, can write)
+- [bale-mcp](https://github.com/sepehr071/bale-mcp): Bale messenger bot (token, can write)

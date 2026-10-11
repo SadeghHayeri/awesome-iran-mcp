@@ -1,0 +1,73 @@
+# AGENTS.md
+
+Guide for AI agents using or working on **awesome-iran-mcp**: 19 unofficial MCP servers for Iranian websites,
+308 tools in total. Each server is a Python package on PyPI, run as a stdio server with `uvx <package>`.
+
+## Pick a server
+
+| User wants to... | Server | Start with |
+|---|---|---|
+| Buy electronics, appliances, almost anything | `digikala-mcp` | `dk_find_cheapest`, `dk_best_for_budget`, then `dk_product`, `dk_price_history` |
+| Compare a phone or laptop across sellers, with installments | `technolife-mcp` | `tl_find_cheapest`, `tl_product`, `tl_compare` |
+| Gadgets and accessories | `masterkala-mcp` | `mk_find_cheapest`, `mk_product` |
+| Clothes, shoes, bags | `shopino-mcp` | `sh_find_cheapest`, `sh_product` |
+| Cosmetics, skin and hair care, perfume | `khanoumi-mcp`, `asalbanoo-mcp` | `kh_find_cheapest`, `ab_find_cheapest` |
+| Cheapest food delivered to an address | `snapp-mcp` | `find_location`, then `food_find_cheapest`, `food_party_deals` |
+| Groceries delivered to an address | `snapp-mcp`, `okala-mcp` | `market_find_cheapest`; `ok_locate`, `ok_stores`, `ok_compare` |
+| Flights, trains, buses, taxis | `mrbilit-mcp`, `flytoday-mcp` | `mb_search_flights`, `mb_flight_price_calendar`; `ft_search_flights` |
+| Hotels | `mrbilit-mcp`, `flytoday-mcp` | `mb_search_hotels`; `ft_search_hotels` |
+| Villas, cottages, short stays | `jabama-mcp`, `otaghak-mcp` | `jb_search_stays`, `jb_price_quote`; `ot_search_rooms`, `ot_price_quote` |
+| Tours, events, theater tickets | `jabama-mcp` | `jb_search_tours`, `jb_search_events` |
+| CIP, eSIM, visas, activities abroad | `flytoday-mcp` | `ft_cip`, `ft_esim_plans`, `ft_visa`, `ft_activities` |
+| A doctor with a free appointment | `paziresh24-mcp`, `doctoreto-mcp` | `pz_search_doctors`, `pz_first_available`; `dt_search_doctors`, `dt_free_slots` |
+| Clinics, labs, medical offers | `doctoreto-mcp` | `dt_search_centers`, `dt_search_offers` |
+| Ebooks and audiobooks | `taaghche-mcp`, `fidibo-mcp` | `tg_search`, `tg_free_books`; `fd_search`, `fd_free` |
+| Printed books | `30book-mcp` | `sb_search`, `sb_book`, `sb_deals` |
+| Merchant payments (user's own PayPing account) | `payping-mcp` | `payping_get_balance`, `payping_get_sales_summary` |
+| User's own Bale bot | `bale-mcp` | `bot_get_new_messages`, `bot_send_message` |
+
+For the best price, query every server in a category (both doctor servers, all travel servers) and compare.
+Full tool list: [TOOLS.md](TOOLS.md). Machine-readable catalog with env vars: [servers.json](servers.json).
+
+## Install
+
+```bash
+claude mcp add digikala -- uvx digikala-mcp          # Claude Code
+```
+
+```json
+{ "mcpServers": { "digikala": { "command": "uvx", "args": ["digikala-mcp"] } } }
+```
+
+The server key in config is the package name without `-mcp`. [`.mcp.json`](.mcp.json) holds all 19.
+Requires [uv](https://docs.astral.sh/uv/). Add only the servers the task needs: each one adds 11 to 23 tools.
+
+## Rules every server follows
+
+- Prices are **Toman**. Convert before comparing with any Rial figure from elsewhere.
+- Site servers are **read-only**: no login, basket, booking, order or payment. Hand the user the link to buy.
+- `okala-mcp` has an optional OTP login (`ok_login`), read-only, only for text search. Ask the user first.
+- `payping-mcp` (`PAYPING_TOKEN`) and `bale-mcp` (`BALE_BOT_TOKEN`) write to the user's own account.
+  Confirm with the user before any `payping_create_*`, `payping_send_invoice`, `bot_send_*`, `bot_edit_message`
+  or `bot_delete_message` call.
+- Timeouts or HTTP 403 outside Iran: set the server's `<NAME>_MCP_PROXY` env var (names in `servers.json`).
+- Keep request rates low. These are undocumented APIs; they can change or rate-limit.
+- `30book-mcp` is slow (2 to 5 s per list). `flytoday-mcp` searches are rate-limited per IP.
+
+## Working on this repo
+
+```
+servers/<name>-mcp/   git submodule, one per server (own repo, own issues, own releases)
+scripts/catalog.py    rebuilds servers.json, TOOLS.md and .mcp.json from the submodules
+assets/               banners
+README.md / README.fa.md   English (default) and Persian docs; keep both in sync
+```
+
+- Update servers: `git submodule update --init --remote && python scripts/catalog.py`, then commit the new pins and generated files.
+- Never edit `servers.json`, `TOOLS.md` or `.mcp.json` by hand.
+- Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
+  `SERVERS` in `scripts/catalog.py`, run the script, add a row to both READMEs and the table above.
+- Code changes to a server belong in that server's repo. Inside one: `uv sync`, `uv run ruff check .`,
+  `uv run pytest -q` (offline), `uv run pytest -m live -q` (real site).
+- Release a server: bump `version` in its `pyproject.toml` and `server.json`, push a `v*` tag; CI publishes to
+  PyPI, the MCP Registry and GitHub Releases.

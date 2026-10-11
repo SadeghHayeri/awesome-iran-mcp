@@ -1,0 +1,57 @@
+[submodule "servers/snapp-mcp"]
+	path = servers/snapp-mcp
+	url = https://github.com/sepehr071/snapp-mcp.git
+[submodule "servers/okala-mcp"]
+	path = servers/okala-mcp
+	url = https://github.com/sepehr071/okala-mcp.git
+[submodule "servers/digikala-mcp"]
+	path = servers/digikala-mcp
+	url = https://github.com/sepehr071/digikala-mcp.git
+[submodule "servers/technolife-mcp"]
+	path = servers/technolife-mcp
+	url = https://github.com/sepehr071/technolife-mcp.git
+[submodule "servers/masterkala-mcp"]
+	path = servers/masterkala-mcp
+	url = https://github.com/sepehr071/masterkala-mcp.git
+[submodule "servers/khanoumi-mcp"]
+	path = servers/khanoumi-mcp
+	url = https://github.com/sepehr071/khanoumi-mcp.git
+[submodule "servers/asalbanoo-mcp"]
+	path = servers/asalbanoo-mcp
+	url = https://github.com/sepehr071/asalbanoo-mcp.git
+[submodule "servers/shopino-mcp"]
+	path = servers/shopino-mcp
+	url = https://github.com/sepehr071/shopino-mcp.git
+[submodule "servers/otaghak-mcp"]
+	path = servers/otaghak-mcp
+	url = https://github.com/sepehr071/otaghak-mcp.git
+[submodule "servers/jabama-mcp"]
+	path = servers/jabama-mcp
+	url = https://github.com/sepehr071/jabama-mcp.git
+[submodule "servers/mrbilit-mcp"]
+	path = servers/mrbilit-mcp
+	url = https://github.com/sepehr071/mrbilit-mcp.git
+[submodule "servers/flytoday-mcp"]
+	path = servers/flytoday-mcp
+	url = https://github.com/sepehr071/flytoday-mcp.git
+[submodule "servers/paziresh24-mcp"]
+	path = servers/paziresh24-mcp
+	url = https://github.com/sepehr071/paziresh24-mcp.git
+[submodule "servers/doctoreto-mcp"]
+	path = servers/doctoreto-mcp
+	url = https://github.com/sepehr071/doctoreto-mcp.git
+[submodule "servers/taaghche-mcp"]
+	path = servers/taaghche-mcp
+	url = https://github.com/sepehr071/taaghche-mcp.git
+[submodule "servers/fidibo-mcp"]
+	path = servers/fidibo-mcp
+	url = https://github.com/sepehr071/fidibo-mcp.git
+[submodule "servers/30book-mcp"]
+	path = servers/30book-mcp
+	url = https://github.com/sepehr071/30book-mcp.git
+[submodule "servers/payping-mcp"]
+	path = servers/payping-mcp
+	url = https://github.com/sepehr071/payping-mcp.git
+[submodule "servers/bale-mcp"]
+	path = servers/bale-mcp
+	url = https://github.com/sepehr071/bale-mcp.git

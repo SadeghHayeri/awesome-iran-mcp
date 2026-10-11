@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="t d">
+  <title id="t">awesome-iran-mcp</title>
+  <desc id="d">۱۹ سرور MCP و ۳۰۸ ابزار که وب ایران را در اختیار ایجنت&#x200C;های هوش مصنوعی می&#x200C;گذارند.</desc>
+  <defs>
+    <linearGradient id="bg" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1230"/>
+      <stop offset="1" stop-color="#1b0d36"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#3fd6c9"/>
+      <stop offset="1" stop-color="#f4b54a"/>
+    </linearGradient>
+    <pattern id="khatam" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M22 22H58V58H22Z M40 14.5L65.5 40L40 65.5L14.5 40Z" fill="none" stroke="#3fd6c9" stroke-width="1"/>
+      <circle cx="0" cy="0" r="3" fill="#f4b54a"/>
+    </pattern>
+    <radialGradient id="fade" cx="0.22" cy="0.5" r="0.7">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="m"><rect width="1280" height="420" fill="url(#fade)"/></mask>
+  </defs>
+
+  <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="24" fill="url(#khatam)" opacity="0.22" mask="url(#m)"/>
+
+  <text x="1216" y="96" text-anchor="end" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" fill="#8fa3d9" font-size="18" direction="ltr">$ claude mcp add digikala -- uvx digikala-mcp</text>
+  <text x="1218" y="186" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="66" font-weight="800" fill="url(#ink)" letter-spacing="-2" direction="ltr">awesome-iran-mcp</text>
+  <text x="1216" y="238" text-anchor="end" font-family="Vazirmatn,Vazir,Sahel,Tahoma,'Segoe UI',sans-serif" font-size="28" fill="#e7ebff">وب ایران، آماده برای ایجنت&#x200C;های هوش مصنوعی</text>
+
+  <g font-family="Vazirmatn,Vazir,Sahel,Tahoma,'Segoe UI',sans-serif" font-size="20" font-weight="700" direction="rtl">
+    <rect x="1048" y="282" width="168" height="52" rx="26" fill="#3fd6c9" fill-opacity="0.14" stroke="#3fd6c9"/>
+    <text x="1132" y="315" text-anchor="middle" fill="#3fd6c9">۱۹ سرور</text>
+    <rect x="882" y="282" width="150" height="52" rx="26" fill="#f4b54a" fill-opacity="0.14" stroke="#f4b54a"/>
+    <text x="957" y="315" text-anchor="middle" fill="#f4b54a">۳۰۸ ابزار</text>
+    <rect x="670" y="282" width="196" height="52" rx="26" fill="#e7ebff" fill-opacity="0.08" stroke="#8fa3d9"/>
+    <text x="768" y="315" text-anchor="middle" fill="#e7ebff">قیمت به تومان</text>
+  </g>
+
+  <g font-family="Vazirmatn,Vazir,Sahel,Tahoma,'Segoe UI',sans-serif" font-size="16" font-weight="600" fill="#e7ebff" text-anchor="middle" direction="rtl">
+    <g fill-opacity="0.07" stroke-opacity="0.5">
+      <rect x="426" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="302" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="178" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="54" y="70" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="426" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="302" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="178" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="54" y="126" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="426" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="302" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="178" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="54" y="182" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="426" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="302" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="178" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="54" y="238" width="112" height="44" rx="10" fill="#fff" stroke="#f4b54a"/>
+      <rect x="364" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="240" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+      <rect x="116" y="294" width="112" height="44" rx="10" fill="#fff" stroke="#3fd6c9"/>
+    </g>
+    <text x="482" y="98">دیجی&#x200C;کالا</text>
+    <text x="358" y="98">اسنپ&#x200C;فود</text>
+    <text x="234" y="98">اکالا</text>
+    <text x="110" y="98">تکنولایف</text>
+    <text x="482" y="154">مسترکالا</text>
+    <text x="358" y="154">خانومی</text>
+    <text x="234" y="154">عسل بانو</text>
+    <text x="110" y="154">شاپینو</text>
+    <text x="482" y="210">جاباما</text>
+    <text x="358" y="210">اتاقک</text>
+    <text x="234" y="210">مستربلیط</text>
+    <text x="110" y="210">فلای&#x200C;تودی</text>
+    <text x="482" y="266">پذیرش۲۴</text>
+    <text x="358" y="266">دکترتو</text>
+    <text x="234" y="266">طاقچه</text>
+    <text x="110" y="266">فیدیبو</text>
+    <text x="420" y="322">سی&#x200C;بوک</text>
+    <text x="296" y="322">پی&#x200C;پینگ</text>
+    <text x="172" y="322">بله</text>
+  </g>
+
+  <text x="1216" y="380" text-anchor="end" direction="ltr" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" fill="#8fa3d9">Claude · Cursor · VS Code · Windsurf · any MCP client</text>
+</svg>

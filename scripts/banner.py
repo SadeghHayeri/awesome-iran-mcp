@@ -186,7 +186,7 @@ def embed_fonts(svg: str) -> str:
     text = "".join(html.unescape(t) for t in re.findall(r"<text[^>]*>([^<]*)</text>", svg))
     faces = []
     for weight, style in WEIGHTS.items():
-        font = TTFont(ROOT / "assets" / "fonts" / f"Vazirmatn-{style}.woff2")
+        font = TTFont(ROOT / "assets" / "fonts" / f"Vazirmatn-{style}.woff2", recalcTimestamp=False)  # stable bytes
         opts = subset.Options()
         opts.flavor, opts.layout_features, opts.hinting = "woff2", ["*"], False  # keep Persian joining forms
         sub = subset.Subsetter(opts)

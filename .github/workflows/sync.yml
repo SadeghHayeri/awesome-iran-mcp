@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install fonttools brotli
+      - run: pip install fonttools==4.66.1 brotli==1.2.0  # pinned: other versions re-encode the banner fonts
       - run: git submodule update --init --remote
       - run: python scripts/catalog.py && python scripts/banner.py
       - name: Commit if anything changed

@@ -6,6 +6,7 @@ Run from the repo root after `git submodule update --init --remote`:  python scr
 import ast
 import json
 import pathlib
+import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -86,10 +87,29 @@ def main() -> None:
         md += [f"- `{t['name']}`: {t['summary'] or t['title']}" for t in found]
         md.append("")
 
+    old_total = sum(s["tool_count"] for s in json.loads((ROOT / "servers.json").read_text(encoding="utf-8")))
+    total = sum(s["tool_count"] for s in catalog)
     (ROOT / "servers.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (ROOT / ".mcp.json").write_text(json.dumps({"mcpServers": mcp}, indent=2) + "\n", encoding="utf-8")
     (ROOT / "TOOLS.md").write_text("\n".join(md), encoding="utf-8")
-    print(f"{len(catalog)} servers, {sum(s['tool_count'] for s in catalog)} tools")
+    sync_docs(catalog, old_total, total)
+    print(f"{len(catalog)} servers, {total} tools")
+
+
+def sync_docs(catalog: list[dict], old_total: int, total: int) -> None:
+    """Keep the tool counts written in the docs in step with the catalog."""
+    fa = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
+    for doc in ("README.md", "README.fa.md", "AGENTS.md", "llms.txt"):
+        path = ROOT / doc
+        text = path.read_text(encoding="utf-8")
+        for s in catalog:
+            n = s["tool_count"]
+            count = str(n).translate(fa) if doc == "README.fa.md" else str(n)
+            # table row: | [name](repo) | site | <count> |
+            text = re.sub(rf"(^\| \[{s['name']}\]\([^)]*\) \| [^|]* \| )[^|]+( \|)", rf"\g<1>{count}\2", text, flags=re.M)
+        if old_total != total:
+            text = text.replace(str(old_total), str(total)).replace(str(old_total).translate(fa), str(total).translate(fa))
+        path.write_text(text, encoding="utf-8", newline="")
 
 
 if __name__ == "__main__":

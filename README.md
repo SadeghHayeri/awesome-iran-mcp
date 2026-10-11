@@ -78,57 +78,57 @@ cd awesome-iran-mcp && claude
 
 ### 🛒 Shopping
 
-| Server | Site | Tools | What your agent can do |
-|---|---|---:|---|
-| [digikala-mcp](https://github.com/sepehr071/digikala-mcp) | [Digikala](https://www.digikala.com) (incl. Fresh) | 23 | Search with feature filters, best picks for a budget, every seller, price history, reviews, deals |
-| [technolife-mcp](https://github.com/sepehr071/technolife-mcp) | [Technolife](https://www.technolife.com) | 19 | Electronics: each seller's cash and installment price, specs, reviews, deals |
-| [masterkala-mcp](https://github.com/sepehr071/masterkala-mcp) | [MasterKala](https://masterkala.com) | 14 | Gadgets and accessories: prices, specs, deals |
-| [shopino-mcp](https://github.com/sepehr071/shopino-mcp) | [Shopino](https://shopino.app) | 14 | Fashion from thousands of shops: prices, sizes, stock, shop ratings |
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [digikala-mcp](https://github.com/sepehr071/digikala-mcp) | [Digikala](https://www.digikala.com) (incl. Fresh) | 23 | [![PyPI](https://img.shields.io/pypi/v/digikala-mcp?label=&color=2fe0cf)](https://pypi.org/project/digikala-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/digikala-mcp?label=&color=ffc23d)](https://github.com/sepehr071/digikala-mcp/commits/main) | Search with feature filters, best picks for a budget, every seller, price history, reviews, deals |
+| [technolife-mcp](https://github.com/sepehr071/technolife-mcp) | [Technolife](https://www.technolife.com) | 19 | [![PyPI](https://img.shields.io/pypi/v/technolife-mcp?label=&color=2fe0cf)](https://pypi.org/project/technolife-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/technolife-mcp?label=&color=ffc23d)](https://github.com/sepehr071/technolife-mcp/commits/main) | Electronics: each seller's cash and installment price, specs, reviews, deals |
+| [masterkala-mcp](https://github.com/sepehr071/masterkala-mcp) | [MasterKala](https://masterkala.com) | 14 | [![PyPI](https://img.shields.io/pypi/v/masterkala-mcp?label=&color=2fe0cf)](https://pypi.org/project/masterkala-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/masterkala-mcp?label=&color=ffc23d)](https://github.com/sepehr071/masterkala-mcp/commits/main) | Gadgets and accessories: prices, specs, deals |
+| [shopino-mcp](https://github.com/sepehr071/shopino-mcp) | [Shopino](https://shopino.app) | 14 | [![PyPI](https://img.shields.io/pypi/v/shopino-mcp?label=&color=2fe0cf)](https://pypi.org/project/shopino-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/shopino-mcp?label=&color=ffc23d)](https://github.com/sepehr071/shopino-mcp/commits/main) | Fashion from thousands of shops: prices, sizes, stock, shop ratings |
 
 ### 💄 Beauty
 
-| Server | Site | Tools | What your agent can do |
-|---|---|---:|---|
-| [khanoumi-mcp](https://github.com/sepehr071/khanoumi-mcp) | [Khanoumi](https://www.khanoumi.com) | 12 | Cosmetics, skin and hair care, perfume: prices, shades, reviews, deals |
-| [asalbanoo-mcp](https://github.com/sepehr071/asalbanoo-mcp) | [Asal Banoo](https://asalbanooshop.com) | 12 | Cosmetics and hair care: prices, variants, deals |
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [khanoumi-mcp](https://github.com/sepehr071/khanoumi-mcp) | [Khanoumi](https://www.khanoumi.com) | 12 | [![PyPI](https://img.shields.io/pypi/v/khanoumi-mcp?label=&color=2fe0cf)](https://pypi.org/project/khanoumi-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/khanoumi-mcp?label=&color=ffc23d)](https://github.com/sepehr071/khanoumi-mcp/commits/main) | Cosmetics, skin and hair care, perfume: prices, shades, reviews, deals |
+| [asalbanoo-mcp](https://github.com/sepehr071/asalbanoo-mcp) | [Asal Banoo](https://asalbanooshop.com) | 12 | [![PyPI](https://img.shields.io/pypi/v/asalbanoo-mcp?label=&color=2fe0cf)](https://pypi.org/project/asalbanoo-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/asalbanoo-mcp?label=&color=ffc23d)](https://github.com/sepehr071/asalbanoo-mcp/commits/main) | Cosmetics and hair care: prices, variants, deals |
 
 ### 🍕 Food and groceries
 
-| Server | Site | Tools | What your agent can do |
-|---|---|---:|---|
-| [snapp-mcp](https://github.com/sepehr071/snapp-mcp) | [Snappfood](https://snappfood.ir) + SnappMarket | 21 | Cheapest dish near you, menus, FoodParty flash deals, groceries |
-| [okala-mcp](https://github.com/sepehr071/okala-mcp) | [Okala](https://okala.com) | 16 | Grocery stores that deliver to you, prices across stores, deals |
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [snapp-mcp](https://github.com/sepehr071/snapp-mcp) | [Snappfood](https://snappfood.ir) + SnappMarket | 21 | [![PyPI](https://img.shields.io/pypi/v/snapp-mcp?label=&color=2fe0cf)](https://pypi.org/project/snapp-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/snapp-mcp?label=&color=ffc23d)](https://github.com/sepehr071/snapp-mcp/commits/main) | Cheapest dish near you, menus, FoodParty flash deals, groceries |
+| [okala-mcp](https://github.com/sepehr071/okala-mcp) | [Okala](https://okala.com) | 16 | [![PyPI](https://img.shields.io/pypi/v/okala-mcp?label=&color=2fe0cf)](https://pypi.org/project/okala-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/okala-mcp?label=&color=ffc23d)](https://github.com/sepehr071/okala-mcp/commits/main) | Grocery stores that deliver to you, prices across stores, deals |
 
 ### ✈️ Travel and stays
 
-| Server | Site | Tools | What your agent can do |
-|---|---|---:|---|
-| [mrbilit-mcp](https://github.com/sepehr071/mrbilit-mcp) | [MrBilit](https://mrbilit.com) | 22 | Cheapest flights, trains, buses, taxis and hotels; seats and refund rules |
-| [flytoday-mcp](https://github.com/sepehr071/flytoday-mcp) | [Flytoday](https://www.flytoday.ir) | 22 | Flights, trains, buses, hotels, villas; CIP, eSIM, visas, activities |
-| [jabama-mcp](https://github.com/sepehr071/jabama-mcp) | [Jabama](https://www.jabama.com) | 21 | Stays with exact prices, group tours, events and theater tickets |
-| [otaghak-mcp](https://github.com/sepehr071/otaghak-mcp) | [Otaghak](https://www.otaghak.com) | 15 | Villas and cottages: availability, exact stay price, reviews, hosts |
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [mrbilit-mcp](https://github.com/sepehr071/mrbilit-mcp) | [MrBilit](https://mrbilit.com) | 22 | [![PyPI](https://img.shields.io/pypi/v/mrbilit-mcp?label=&color=2fe0cf)](https://pypi.org/project/mrbilit-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/mrbilit-mcp?label=&color=ffc23d)](https://github.com/sepehr071/mrbilit-mcp/commits/main) | Cheapest flights, trains, buses, taxis and hotels; seats and refund rules |
+| [flytoday-mcp](https://github.com/sepehr071/flytoday-mcp) | [Flytoday](https://www.flytoday.ir) | 22 | [![PyPI](https://img.shields.io/pypi/v/flytoday-mcp?label=&color=2fe0cf)](https://pypi.org/project/flytoday-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/flytoday-mcp?label=&color=ffc23d)](https://github.com/sepehr071/flytoday-mcp/commits/main) | Flights, trains, buses, hotels, villas; CIP, eSIM, visas, activities |
+| [jabama-mcp](https://github.com/sepehr071/jabama-mcp) | [Jabama](https://www.jabama.com) | 21 | [![PyPI](https://img.shields.io/pypi/v/jabama-mcp?label=&color=2fe0cf)](https://pypi.org/project/jabama-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/jabama-mcp?label=&color=ffc23d)](https://github.com/sepehr071/jabama-mcp/commits/main) | Stays with exact prices, group tours, events and theater tickets |
+| [otaghak-mcp](https://github.com/sepehr071/otaghak-mcp) | [Otaghak](https://www.otaghak.com) | 15 | [![PyPI](https://img.shields.io/pypi/v/otaghak-mcp?label=&color=2fe0cf)](https://pypi.org/project/otaghak-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/otaghak-mcp?label=&color=ffc23d)](https://github.com/sepehr071/otaghak-mcp/commits/main) | Villas and cottages: availability, exact stay price, reviews, hosts |
 
 ### 🩺 Health
 
-| Server | Site | Tools | What your agent can do |
-|---|---|---:|---|
-| [paziresh24-mcp](https://github.com/sepehr071/paziresh24-mcp) | [Paziresh24](https://www.paziresh24.com) | 12 | Doctors, visit prices, reviews, free appointment slots |
-| [doctoreto-mcp](https://github.com/sepehr071/doctoreto-mcp) | [Doctoreto](https://doctoreto.com) | 14 | Doctors, visit fees, free slots, reviews, clinics, labs, offers |
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [paziresh24-mcp](https://github.com/sepehr071/paziresh24-mcp) | [Paziresh24](https://www.paziresh24.com) | 12 | [![PyPI](https://img.shields.io/pypi/v/paziresh24-mcp?label=&color=2fe0cf)](https://pypi.org/project/paziresh24-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/paziresh24-mcp?label=&color=ffc23d)](https://github.com/sepehr071/paziresh24-mcp/commits/main) | Doctors, visit prices, reviews, free appointment slots |
+| [doctoreto-mcp](https://github.com/sepehr071/doctoreto-mcp) | [Doctoreto](https://doctoreto.com) | 14 | [![PyPI](https://img.shields.io/pypi/v/doctoreto-mcp?label=&color=2fe0cf)](https://pypi.org/project/doctoreto-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/doctoreto-mcp?label=&color=ffc23d)](https://github.com/sepehr071/doctoreto-mcp/commits/main) | Doctors, visit fees, free slots, reviews, clinics, labs, offers |
 
 ### 📚 Books
 
-| Server | Site | Tools | What your agent can do |
-|---|---|---:|---|
-| [taaghche-mcp](https://github.com/sepehr071/taaghche-mcp) | [Taaghche](https://taaghche.com) | 12 | Ebooks and audiobooks: prices, discounts, reviews, bestsellers, free books |
-| [fidibo-mcp](https://github.com/sepehr071/fidibo-mcp) | [Fidibo](https://fidibo.com) | 11 | Ebooks and audiobooks: prices, Fidibo Plus, reviews, bestsellers, free books |
-| [30book-mcp](https://github.com/sepehr071/30book-mcp) | [30book](https://www.30book.com) | 14 | Printed books: list and discounted price, stock, editions, ISBN, deals |
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [taaghche-mcp](https://github.com/sepehr071/taaghche-mcp) | [Taaghche](https://taaghche.com) | 12 | [![PyPI](https://img.shields.io/pypi/v/taaghche-mcp?label=&color=2fe0cf)](https://pypi.org/project/taaghche-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/taaghche-mcp?label=&color=ffc23d)](https://github.com/sepehr071/taaghche-mcp/commits/main) | Ebooks and audiobooks: prices, discounts, reviews, bestsellers, free books |
+| [fidibo-mcp](https://github.com/sepehr071/fidibo-mcp) | [Fidibo](https://fidibo.com) | 11 | [![PyPI](https://img.shields.io/pypi/v/fidibo-mcp?label=&color=2fe0cf)](https://pypi.org/project/fidibo-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/fidibo-mcp?label=&color=ffc23d)](https://github.com/sepehr071/fidibo-mcp/commits/main) | Ebooks and audiobooks: prices, Fidibo Plus, reviews, bestsellers, free books |
+| [30book-mcp](https://github.com/sepehr071/30book-mcp) | [30book](https://www.30book.com) | 14 | [![PyPI](https://img.shields.io/pypi/v/30book-mcp?label=&color=2fe0cf)](https://pypi.org/project/30book-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/30book-mcp?label=&color=ffc23d)](https://github.com/sepehr071/30book-mcp/commits/main) | Printed books: list and discounted price, stock, editions, ISBN, deals |
 
 ### 💳 Your own accounts (need a token)
 
-| Server | Site | Tools | What your agent can do |
-|---|---|---:|---|
-| [payping-mcp](https://github.com/sepehr071/payping-mcp) | [PayPing](https://www.payping.ir) | 21 | Read balance, sales, customers; create products, payment links, coupons, invoices |
-| [bale-mcp](https://github.com/sepehr071/bale-mcp) | [Bale](https://bale.ai) messenger | 13 | Read and answer your bot's messages, ask and wait for replies, send files |
+| Server | Site | Tools | Version | Updated | What your agent can do |
+|---|---|---:|:---:|:---:|---|
+| [payping-mcp](https://github.com/sepehr071/payping-mcp) | [PayPing](https://www.payping.ir) | 21 | [![PyPI](https://img.shields.io/pypi/v/payping-mcp?label=&color=2fe0cf)](https://pypi.org/project/payping-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/payping-mcp?label=&color=ffc23d)](https://github.com/sepehr071/payping-mcp/commits/main) | Read balance, sales, customers; create products, payment links, coupons, invoices |
+| [bale-mcp](https://github.com/sepehr071/bale-mcp) | [Bale](https://bale.ai) messenger | 13 | [![PyPI](https://img.shields.io/pypi/v/bale-mcp?label=&color=2fe0cf)](https://pypi.org/project/bale-mcp/) | [![Last commit](https://img.shields.io/github/last-commit/sepehr071/bale-mcp?label=&color=ffc23d)](https://github.com/sepehr071/bale-mcp/commits/main) | Read and answer your bot's messages, ask and wait for replies, send files |
 
 Every tool, with a one-line summary: [TOOLS.md](TOOLS.md).
 
@@ -213,4 +213,4 @@ package on first run.
 
 ## License
 
-[MIT](LICENSE). Each server is MIT licensed in its own repo. Site names and trademarks belong to their owners.
+[MIT](LICENSE). Each server is MIT licensed in its own repo. Site names, logos and trademarks belong to their owners and are shown only to identify each site.

@@ -1,0 +1,29 @@
+name: Sync servers
+
+# Moves every submodule to its repo's latest main, then regenerates the catalog, docs counts and banners.
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: git submodule update --init --remote
+      - run: python scripts/catalog.py && python scripts/banner.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || { git commit -m "chore: sync servers to latest" && git push; }

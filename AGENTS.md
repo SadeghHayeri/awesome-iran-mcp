@@ -68,7 +68,7 @@ README.md / README.fa.md   English (default) and Persian docs; keep both in sync
   then commit the new pins and generated files.
 - Never edit `servers.json`, `TOOLS.md`, `.mcp.json` or the banners by hand.
 - Add a server: `git submodule add https://github.com/sepehr071/<name>-mcp servers/<name>-mcp`, add it to
-  `SERVERS` in `scripts/catalog.py` and `APPS` in `scripts/banner.py`, run both scripts, add a row to both
+  `SERVERS` in `scripts/catalog.py` and `APPS` in `scripts/banner.py` (with its logo in `assets/logos/`), run both scripts, add a row to both
   READMEs and the table above. Update the 19 / 308 counts written in both READMEs.
 - Code changes to a server belong in that server's repo. Inside one: `uv sync`, `uv run ruff check .`,
   `uv run pytest -q` (offline), `uv run pytest -m live -q` (real site).

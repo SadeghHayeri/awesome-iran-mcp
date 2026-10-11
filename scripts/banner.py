@@ -3,6 +3,7 @@
 Counts come from servers.json, so run scripts/catalog.py first:  python scripts/banner.py
 """
 
+import base64
 import json
 import pathlib
 
@@ -10,27 +11,27 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 W, H = 1280, 460
 ZWNJ = "&#x200C;"
 
-# English name, Persian name, English glyph, Persian glyph, gradient top, gradient bottom
+# English name, Persian name, logo in assets/logos, inner padding (0 = logo fills the tile)
 APPS = [
-    ("Digikala", f"دیجی{ZWNJ}کالا", "D", "د", "#ff5a6e", "#c3002f"),
-    ("Snappfood", f"اسنپ{ZWNJ}فود", "S", "ا", "#ff3dbb", "#b8006f"),
-    ("Okala", "اکالا", "O", "ا", "#3fd46a", "#108a33"),
-    ("Technolife", "تکنولایف", "T", "ت", "#3d7bff", "#0634a0"),
-    ("MasterKala", "مسترکالا", "M", "م", "#ff8a3d", "#d14800"),
-    ("Khanoumi", "خانومی", "K", "خ", "#ff5c8f", "#a3164a"),
-    ("Asal Banoo", "عسل بانو", "A", "ع", "#ffcf3d", "#d48a00"),
-    ("Shopino", "شاپینو", "S", "ش", "#a06bff", "#4f1fb0"),
-    ("Jabama", "جاباما", "J", "ج", "#2fe0cf", "#00897e"),
-    ("Otaghak", "اتاقک", "O", "ا", "#ffc23d", "#f07800"),
-    ("MrBilit", "مستربلیط", "M", "م", "#4d8dff", "#0a3fa8"),
-    ("Flytoday", f"فلای{ZWNJ}تودی", "F", "ف", "#3dc4ff", "#0066cc"),
-    ("Paziresh24", "پذیرش۲۴", "P", "پ", "#2fd1c8", "#00706f"),
-    ("Doctoreto", "دکترتو", "D", "د", "#5cb8f0", "#1565a8"),
-    ("Taaghche", "طاقچه", "T", "ط", "#ff6b66", "#a31d1a"),
-    ("Fidibo", "فیدیبو", "F", "ف", "#ff8a5c", "#d43a10"),
-    ("30book", f"سی{ZWNJ}بوک", "30", "۳۰", "#a1887f", "#4e342e"),
-    ("PayPing", f"پی{ZWNJ}پینگ", "P", "پ", "#5c8cff", "#0033cc"),
-    ("Bale", "بله", "B", "ب", "#3dd9c5", "#007d71"),
+    ("Digikala", f"دیجی{ZWNJ}کالا", "digikala.png", 0),
+    ("Snappfood", f"اسنپ{ZWNJ}فود", "snappfood.svg", 8),
+    ("Okala", "اکالا", "okala.png", 0),
+    ("Technolife", "تکنولایف", "technolife.png", 0),
+    ("MasterKala", "مسترکالا", "masterkala.png", 0),
+    ("Khanoumi", "خانومی", "khanoumi.png", 0),
+    ("Asal Banoo", "عسل بانو", "asalbanoo.png", 0),
+    ("Shopino", "شاپینو", "shopino.png", 0),
+    ("Jabama", "جاباما", "jabama.png", 0),
+    ("Otaghak", "اتاقک", "otaghak.png", 0),
+    ("MrBilit", "مستربلیط", "mrbilit.svg", 0),
+    ("Flytoday", f"فلای{ZWNJ}تودی", "flytoday.png", 0),
+    ("Paziresh24", "پذیرش۲۴", "paziresh24.png", 0),
+    ("Doctoreto", "دکترتو", "doctoreto.png", 0),
+    ("Taaghche", "طاقچه", "taaghche.png", 0),
+    ("Fidibo", "فیدیبو", "fidibo.png", 0),
+    ("30book", f"سی{ZWNJ}بوک", "30book.png", 0),
+    ("PayPing", f"پی{ZWNJ}پینگ", "payping.png", 0),
+    ("Bale", "بله", "bale.png", 0),
 ]
 
 LATIN = "'SF Pro Display','Segoe UI',Inter,Helvetica,Arial,sans-serif"
@@ -68,13 +69,12 @@ DEFS = """<defs>
       <stop offset="1" stop-color="#fff" stop-opacity="0.10"/>
     </linearGradient>
     <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/>
+      <stop offset="0" stop-color="#fff" stop-opacity="0.28"/>
       <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#bff6ee"/>
     </linearGradient>
-    {grads}
   </defs>"""
 
 
@@ -97,34 +97,36 @@ def pill(x: float, y: float, w: float, text: str, font: str, color: str, fa: boo
   <text x="{mid}" y="{y + 31}" text-anchor="middle" font-family="{font}" font-size="19" font-weight="700" fill="#fff">{text}</text>"""
 
 
+def logo(file: str) -> str:
+    data = (ROOT / "assets" / "logos" / file).read_bytes()
+    mime = "image/svg+xml" if file.endswith(".svg") else "image/png"
+    return f"data:{mime};base64,{base64.b64encode(data).decode()}"
+
+
 def icons(px: float, py: float, fa: bool) -> str:
     out = []
     size, pitch_x, pitch_y, cols = 70, 104, 94, 5
-    for i, (en, fa_name, g_en, g_fa, *_) in enumerate(APPS):
+    for i, (en, fa_name, file, pad) in enumerate(APPS):
         row, col = divmod(i, cols)
         if fa:
             col = cols - 1 - col  # right to left
         last_row_offset = pitch_x / 2 if row == len(APPS) // cols else 0
         x = px + col * pitch_x + (-last_row_offset if fa else last_row_offset)
         y = py + row * pitch_y
-        glyph, label, font = (g_fa, fa_name, PERSIAN) if fa else (g_en, en, LATIN)
-        gsize = 30 if len(glyph) > 1 else 36
-        out.append(f"""<g filter="url(#iconlift)">
-    <rect x="{x}" y="{y}" width="{size}" height="{size}" rx="18" fill="url(#a{i})"/>
+        label, font = (fa_name, PERSIAN) if fa else (en, LATIN)
+        fit = "xMidYMid meet" if pad else "xMidYMid slice"
+        out.append(f"""<clipPath id="c{i}"><rect x="{x}" y="{y}" width="{size}" height="{size}" rx="18"/></clipPath>
+  <g filter="url(#iconlift)">
+    <rect x="{x}" y="{y}" width="{size}" height="{size}" rx="18" fill="#fff"/>
+    <image x="{x + pad}" y="{y + pad}" width="{size - 2 * pad}" height="{size - 2 * pad}" preserveAspectRatio="{fit}" clip-path="url(#c{i})" href="{logo(file)}"/>
     <rect x="{x}" y="{y}" width="{size}" height="{size / 2}" rx="18" fill="url(#gloss)"/>
-    <rect x="{x + 0.5}" y="{y + 0.5}" width="{size - 1}" height="{size - 1}" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+    <rect x="{x + 0.5}" y="{y + 0.5}" width="{size - 1}" height="{size - 1}" rx="17.5" fill="none" stroke="#fff" stroke-opacity="0.45"/>
   </g>
-  <text x="{x + size / 2}" y="{y + 47}" text-anchor="middle" font-family="{font}" font-size="{gsize}" font-weight="800" fill="#fff">{glyph}</text>
   <text x="{x + size / 2}" y="{y + size + 16}" text-anchor="middle" font-family="{font}" font-size="12.5" font-weight="600" fill="#fff" fill-opacity="0.92">{label}</text>""")
     return "\n  ".join(out)
 
 
 def banner(fa: bool, servers: int, tools: int) -> str:
-    grads = "\n    ".join(
-        f'<linearGradient id="a{i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{a[4]}"/>'
-        f'<stop offset="1" stop-color="{a[5]}"/></linearGradient>'
-        for i, a in enumerate(APPS)
-    )
     card_x, panel_x = (650, 40) if fa else (40, 670)
     card_w, panel_w = 590, 570
     if fa:
@@ -151,7 +153,7 @@ def banner(fa: bool, servers: int, tools: int) -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="t d">
   <title id="t">awesome-iran-mcp</title>
   <desc id="d">{desc}</desc>
-  {DEFS.format(grads=grads)}
+  {DEFS}
 
   <rect width="{W}" height="{H}" rx="28" fill="url(#bg)"/>
   <g clip-path="url(#frame)"><use href="#blobs" filter="url(#soft)" opacity="0.85"/></g>

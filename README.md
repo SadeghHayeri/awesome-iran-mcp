@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="awesome-iran-mcp: 19 MCP servers and 308 tools that wire the Iranian web into AI agents" width="100%">
+<img src="assets/banner.svg" alt="awesome-iran-mcp: 19 unofficial MCP servers and 308 tools for Iranian shopping, food, travel, health and book sites, for Claude, Cursor and Copilot" width="100%">
 
 **English** · [فارسی](README.fa.md)
 
-# awesome-iran-mcp
+# Iran MCP servers: awesome-iran-mcp
 
 **Give your AI agent the Iranian web.**<br>
-19 open-source MCP servers for Digikala, Snappfood, Jabama, MrBilit, Paziresh24, Taaghche and more.<br>
-Search, compare prices in Toman, find free slots and today's deals from Claude, Cursor, VS Code or any MCP client.<br>
+19 unofficial, open-source Persian-web MCP servers for Digikala, Snappfood, Jabama, MrBilit, Paziresh24, Taaghche and more.<br>
+Search, compare prices in Toman, find free slots and today's deals from Claude, Cursor, GitHub Copilot in VS Code or any MCP client.<br>
 Install them as Claude Code plugins with skills, or as Agent Skills for Codex, Cursor, Antigravity and Grok Build.
 
 [![Servers](https://img.shields.io/badge/servers-19-3fd6c9)](#the-servers)
@@ -251,6 +251,8 @@ Plugins pin each server to a release, so a plugin update is a server update. Tur
 `uvx digikala-mcp` config keeps running its cached copy; run `uvx digikala-mcp@latest --help` once and restart
 your client to upgrade it.
 </details>
+
+If this saves you some tab-hopping, a star on the repo helps other people find it.
 
 ## License
 

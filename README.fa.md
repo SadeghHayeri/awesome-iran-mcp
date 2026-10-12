@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.fa.svg" alt="awesome-iran-mcp: ۱۹ سرور MCP و ۳۰۸ ابزار برای ایجنت‌های هوش مصنوعی" width="100%">
+<img src="assets/banner.fa.svg" alt="awesome-iran-mcp: ۱۹ سرور MCP غیررسمی و ۳۰۸ ابزار برای فروشگاه‌ها، غذا، سفر، سلامت و کتاب ایرانی، برای Claude، Cursor و Copilot" width="100%">
 
 [English](README.md) · **فارسی**
 
@@ -8,12 +8,12 @@
 
 <div dir="rtl">
 
-# awesome-iran-mcp
+# سرور MCP برای سایت‌های ایرانی: awesome-iran-mcp
 
 <p align="center">
 <b>وب ایران را به ایجنت هوش مصنوعی‌تان بدهید.</b><br>
-۱۹ سرور MCP متن‌باز برای دیجی‌کالا، اسنپ‌فود، جاباما، مستربلیط، پذیرش۲۴، طاقچه و بقیه.<br>
-جست‌وجو، مقایسهٔ قیمت به تومان، پیدا کردن نوبت خالی و تخفیف‌های امروز، از داخل Claude، Cursor، VS Code یا هر کلاینت MCP.<br>
+۱۹ سرور MCP متن‌باز و غیررسمی برای ایران و سایت‌های فارسی: دیجی‌کالا، اسنپ‌فود، جاباما، مستربلیط، پذیرش۲۴، طاقچه و بقیه.<br>
+جست‌وجو، مقایسهٔ قیمت به تومان، پیدا کردن نوبت خالی و تخفیف‌های امروز، از داخل Claude، Cursor، GitHub Copilot در VS Code یا هر کلاینت MCP.<br>
 به‌صورت پلاگین Claude Code همراه با اسکیل نصب کنید، یا به‌صورت Agent Skills برای Codex، Cursor، Antigravity و Grok Build.
 </p>
 
@@ -255,6 +255,8 @@ claude plugin validate .
 
 پلاگین‌ها هر سرور را روی یک نسخهٔ منتشرشده پین می‌کنند، پس به‌روزرسانی پلاگین یعنی به‌روزرسانی سرور. یک بار در <code>/plugin</code> ← <b>Marketplaces</b> ← <code>iran-mcp</code> به‌روزرسانی خودکار را روشن کنید، یا <code>claude plugin update &lt;name&gt;@iran-mcp</code> را اجرا کنید. تنظیم سادهٔ <code>uvx digikala-mcp</code> همان نسخهٔ کش‌شده را اجرا می‌کند؛ برای ارتقا یک بار <code>uvx digikala-mcp@latest --help</code> را اجرا کنید و کلاینت را دوباره باز کنید.
 </details>
+
+اگر این مجموعه چند بار گشتن بین تب‌ها را برایتان کم کرد، ستاره‌دار کردن مخزن به پیدا شدن آن توسط دیگران کمک می‌کند.
 
 ## مجوز
 

@@ -1,7 +1,7 @@
 {
   "name": "jabama",
   "displayName": "Jabama",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unofficial read-only Jabama: villas and stays with exact prices, group tours, events and theater.",
   "author": {
     "name": "sepehr071",
@@ -19,7 +19,7 @@
     "jabama": {
       "command": "uvx",
       "args": [
-        "jabama-mcp@0.2.0"
+        "jabama-mcp@0.2.1"
       ]
     }
   }

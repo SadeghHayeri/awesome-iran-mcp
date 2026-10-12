@@ -1,7 +1,7 @@
 {
   "name": "taaghche",
   "displayName": "Taaghche",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial read-only Taaghche: search Persian ebooks and audiobooks, compare prices, read reviews.",
   "author": {
     "name": "sepehr071",
@@ -19,7 +19,7 @@
     "taaghche": {
       "command": "uvx",
       "args": [
-        "taaghche-mcp@0.1.0"
+        "taaghche-mcp@0.1.1"
       ]
     }
   }

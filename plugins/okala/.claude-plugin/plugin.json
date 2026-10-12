@@ -1,7 +1,7 @@
 {
   "name": "okala",
   "displayName": "Okala",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial read-only Okala: grocery stores that deliver to you, compare prices across stores.",
   "author": {
     "name": "sepehr071",
@@ -19,7 +19,7 @@
     "okala": {
       "command": "uvx",
       "args": [
-        "okala-mcp@0.1.0"
+        "okala-mcp@0.1.1"
       ]
     }
   }

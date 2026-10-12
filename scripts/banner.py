@@ -169,8 +169,8 @@ def banner(fa: bool, servers: int, tools: int) -> str:
   {glass("card", card_x, 30, card_w, 400, 40)}
   {glass("panel", panel_x, 30, panel_w, 400, 40)}
 
-  <rect x="{tx - (430 if fa else 0)}" y="70" width="430" height="38" rx="19" fill="#000" fill-opacity="0.28" stroke="#fff" stroke-opacity="0.25"/>
-  <text x="{tx + (-215 if fa else 215)}" y="95" text-anchor="middle" font-family="{MONO}" font-size="16" fill="#d9fff9">$ claude plugin install iran-all@iran-mcp</text>
+  <rect x="{tx - (490 if fa else 0)}" y="70" width="490" height="38" rx="19" fill="#000" fill-opacity="0.28" stroke="#fff" stroke-opacity="0.25"/>
+  <text x="{tx + (-245 if fa else 245)}" y="95" text-anchor="middle" font-family="{MONO}" font-size="15" fill="#d9fff9">/plugin marketplace add sepehr071/awesome-iran-mcp</text>
   <text x="{tx}" y="196" text-anchor="{anchor}" font-family="{LATIN}" font-size="58" font-weight="800" fill="url(#ink)" letter-spacing="-1.5">awesome-iran-mcp</text>
   <text x="{tx}" y="250" text-anchor="{anchor}" font-family="{font}" font-size="25" fill="#fff" fill-opacity="0.92">{subtitle}</text>
   {chr(10).join(pills)}
